@@ -43,6 +43,8 @@ function textToSpeech(text) {
 
 speechBtn.addEventListener("click", e => {
     e.preventDefault();
+
+    //if textarea is not empty
     if (textarea.value !== "") {
 
         //if speech is not currently in process on speaking
@@ -50,6 +52,8 @@ speechBtn.addEventListener("click", e => {
             textToSpeech(textarea.value);
         }
 
+
+        //if text is too long, run this code
         if (textarea.value.length > 80) {
 
             //checking if speech in speaking process or not in every 100ms
@@ -62,18 +66,20 @@ speechBtn.addEventListener("click", e => {
                 }
             }, 500);
 
-            //if speaking is true, then change its value to false and pause the speech
-            //else change its value to true and resume the speech
+            //if speaking is true -> change its value to false, resume the speech, show pause speech text
+            //else -> change its value to true, pause the speech, show resume the speech text
             if (isSpeaking) {
                 synth.resume();
                 isSpeaking = false;
                 speechBtn.innerText = "Pause Speech";
-            } else {
+            }
+            else {
                 synth.pause();
                 isSpeaking = true;
                 speechBtn.innerText = "Resume Speech";
             }
-        } else {
+        }
+        else {
             speechBtn.innerText = "Convert To Speech";
         }
     }
