@@ -22,7 +22,6 @@ function voices() {
 }
 
 
-
 synth.addEventListener("voiceschanged", voices);
 
 function textToSpeech(text) {
@@ -38,7 +37,6 @@ function textToSpeech(text) {
     //to hear the speech
     synth.speak(utterance);
 }
-
 
 
 speechBtn.addEventListener("click", e => {
