@@ -7,6 +7,10 @@ body{
     font-family: 'Andale', monospace;
     background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
 }
+::selection{
+    color: white;
+    background: #f1b963;
+}
 
 .container{
     margin-top: 250px;
