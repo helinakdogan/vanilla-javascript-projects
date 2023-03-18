@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+    <link rel="stylesheet" href="/currency_converter/style.css">
 </head>
 
 <body>
@@ -24,23 +25,20 @@
             </select>
             <input type="number" id="worth-first" value="1" min="0">
         </div>
-    </div>
 
-
-    </div>
-    <div class="currency-container">
-        <select id="currency-second">
-            <option value="AUD">AUD</option>
-            <option value="CAD">CAD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="INR">INR</option>
-            <option value="JPY">JPY</option>
-            <option value="USD" selected>USD</option>
-        </select>
-        <input type="number" id="worth-second" disabled>
-    </div>
-    <p class="exchange-rate" id="exchange-rate">1 EUR = 1.05955 USD</p>
+        <div class="currency-container">
+            <select id="currency-second">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="USD" selected>USD</option>
+            </select>
+            <input type="number" id="worth-second" disabled>
+        </div>
+        <p class="exchange-rate" id="exchange-rate">1 EUR = 1.05955 USD</p>
     </div>
 
 
