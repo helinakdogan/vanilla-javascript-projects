@@ -1,4 +1,4 @@
-# javascript-projects-for-beginners
+# Javascript Projects For Beginners
 
 # 1. Text to Speech Converter
 ![Ekran Görüntüsü (206)](https://user-images.githubusercontent.com/85782760/226145980-3b8e797b-5966-4554-bf5c-abdcd2560176.png)
